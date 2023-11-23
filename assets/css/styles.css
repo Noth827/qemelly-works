@@ -11,6 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -67,7 +69,8 @@ html {
     text-align: right;
     margin-top: 10px;
     text-decoration: none;
-    color: #3498db;
+    color: #ffffff;
+    background-color: #111111;
     font-weight: bold;
 }
 
@@ -116,7 +119,8 @@ html {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    transform: translateX(50%);
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -124,8 +128,13 @@ html {
 .gallery-control {
     background: rgba(255, 255, 255, 0.7);
     padding: 10px;
+    border-radius: 50%;
     border: none;
     cursor: pointer;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    font-weight: bold;
 }
 
 nav {
@@ -147,6 +156,13 @@ nav a {
     padding: 8px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+
+
+.logo img {
+    width: 30px;
+    /* ロゴの適切なサイズに調整してください */
+    height: auto;
 }
 
 nav a:hover {
@@ -221,4 +237,36 @@ section p {
     color: #333;
     font-weight: bold;
     margin-top: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    /* 最初は透明 */
+    transition: opacity 0.5s ease;
+    /* フェードのアニメーションを設定 */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }

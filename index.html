@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/navigation.js"></script>
     <script defer src="assets/js/gallery.js"></script>
+    <script defer src="assets/js/modal.js"></script>
   </head>
   <body>
     <nav>
-      <a href="#home">Home</a>
+      <a class="logo" href="#home">
+        <img src="assets/images/SocialIcons/qemelLogo800x.png" alt="home" />
+      </a>
       <a href="#portfolio">Portfolio</a>
       <a href="#profile">Profile</a>
       <a href="#skills">Skills</a>
@@ -41,8 +44,8 @@
 
         <!-- Gallery Controls -->
         <div class="gallery-controls">
-          <button class="gallery-control" onclick="prevSlide()">❮</button>
-          <button class="gallery-control" onclick="nextSlide()">❯</button>
+          <button class="gallery-control" onclick="prevSlide()"><</button>
+          <button class="gallery-control" onclick="nextSlide()">></button>
         </div>
       </div>
     </section>
@@ -55,7 +58,7 @@
         主にゲーム開発・作曲・デザイン等をやっております。<br />
         よろしくお願いします。<br /><br />
 
-        ゲーム制作: 2022.12~<br />
+        ゲーム制作: 2023.3~<br />
         プログラミング: 2022.3~<br />
         作曲: 2020~<br />
         デザイン: ちょっと<br />
@@ -115,7 +118,6 @@
               <div class="portfolio-item-description">
                 HTML, CSS, JavaScriptで作成しました。
               </div>
-              <a href="project1.html" class="portfolio-item-link">Details</a>
             </div>
           </a>
         </div>
@@ -132,7 +134,12 @@
               <div class="portfolio-item-description">
                 ルールが説明されないパズルゲームです。unity1weekで制作しました。
               </div>
-              <a href="project1.html" class="portfolio-item-link">Details</a>
+              <button
+                class="portfolio-item-link"
+                onclick="openDetailsModal('here_is_one_button',event)"
+              >
+                Details
+              </button>
             </div>
           </a>
         </div>
@@ -146,7 +153,12 @@
               <div class="portfolio-item-description">
                 2レーン+αなのに高難易度なリズムゲームです。
               </div>
-              <a href="project1.html" class="portfolio-item-link">Details</a>
+              <button
+                class="portfolio-item-link"
+                onclick="openDetailsModal('circla',event)"
+              >
+                Details
+              </button>
             </div>
           </a>
         </div>
@@ -163,7 +175,6 @@
               <div class="portfolio-item-description">
                 Circlaのサウンドトラックです。無償利用が可能です（イラストは友人作）。
               </div>
-              <a href="project1.html" class="portfolio-item-link">Details</a>
             </div>
           </a>
         </div>
@@ -177,7 +188,19 @@
               <div class="portfolio-item-description">
                 文字列を解読していくゲームです。unity1weekで制作しました。
               </div>
-              <a href="project1.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://qemelly.bandcamp.com/album/-" target="_blank">
+            <img src="assets\images\Projects\ichininsho.jpg" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">一人称完結性</div>
+              <div class="portfolio-item-responsible">Music</div>
+              <div class="portfolio-item-description">
+                InstrumentalのEPです。
+              </div>
             </div>
           </a>
         </div>
@@ -190,15 +213,21 @@
             <img src="assets\images\Projects\nobs-expor1x1t.gif" />
             <div class="portfolio-item-content">
               <div class="portfolio-item-title">楽曲</div>
+              <div class="portfolio-item-responsible">Music</div>
               <div class="portfolio-item-description">
-                その他楽曲（VOCALOID, Instrumental）
+                その他楽曲（VOCALOID, Instrumental）です。
               </div>
-              <a href="project2.html" class="portfolio-item-link">Details</a>
             </div>
           </a>
         </div>
 
-        <!-- Add more portfolio items as needed -->
+        <div id="details-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeDetailsModal()">&times;</span>
+            <h2 id="project-details-title"></h2>
+            <p id="project-details-content"></p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="skills">
@@ -206,7 +235,11 @@
       <ul class="skills-list">
         <li>Unity(C#)</li>
         <li>TOEIC 895点</li>
-        <li>AtCoder緑(Highest:908)</li>
+        <li>
+          <a href="https://atcoder.jp/users/Noth827">
+            AtCoder緑(Highest:908)
+          </a>
+        </li>
         <li>基本情報技術者試験</li>
         <li>HTML/CSS</li>
         <li>JavaScript</li>
