@@ -1,0 +1,224 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item-content {
+    padding: 15px;
+}
+
+.portfolio-item-title {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.portfolio-item-responsible {
+    font-size: 0.9rem;
+    color: #7d61e0;
+    margin-bottom: 10px;
+}
+
+.portfolio-item-description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.portfolio-item-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.gallery-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: top;
+}
+
+.gallery-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 48%;
+    height: 27%;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pixel {
+    image-rendering: pixelated;
+    /* Pixel artの場合、ぼかさずに表示 */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    /* 16:9の縦横比を保持 */
+    display: block;
+    /* 余分なスペースを右に残さないための設定 */
+    object-fit: cover;
+    /* 画像を縦横比を保ちつつcontainerに合わせて切り取る */
+    object-position: center;
+    /* 画像を中央揃えにする */
+
+}
+
+.gallery-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-control {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section p {
+    max-width: fit-content;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.rating {
+    color: #f39c12;
+    /* 星の色を指定 */
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 50px;
+    /* アイコンのサイズを調整 */
+    height: 50px;
+    border-radius: 50%;
+    /* 丸い形状にする */
+    border: 2px solid #ffffff;
+    /* 塗りつぶしの色 */
+    box-shadow: 0 0 0 5px #333;
+    /* 枠線のスタイル */
+    transition: transform 0.3s ease;
+    /* ホバーエフェクトのためのトランジション */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    /* ホバー時に拡大するエフェクト */
+}
+
+.social-icon a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}

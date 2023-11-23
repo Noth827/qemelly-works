@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>けめる Here</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/navigation.js"></script>
+    <script defer src="assets/js/gallery.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+      <div class="gallery-container">
+        <div class="gallery-wrapper">
+          <!-- Gallery Items -->
+          <div class="gallery-item">
+            <div class="pixel">
+              <img src="assets/images/Projects/patient1.gif" alt="patient1" />
+            </div>
+          </div>
+          <div class="gallery-item">
+            <a href="https://unityroom.com/games/circla" target="_blank">
+              <img src="assets/images/Projects/Circla.png" alt="circla" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <div class="pixel">
+              <img src="assets/images/" alt="Image 3" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Controls -->
+        <div class="gallery-controls">
+          <button class="gallery-control" onclick="prevSlide()">❮</button>
+          <button class="gallery-control" onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>
+        けめるです。<br />
+
+        主にゲーム開発・作曲・デザイン等をやっております。<br />
+        よろしくお願いします。<br /><br />
+
+        ゲーム制作: 2022.12~<br />
+        プログラミング: 2022.3~<br />
+        作曲: 2020~<br />
+        デザイン: ちょっと<br />
+        <br />
+
+        Game Jamでのチーム開発の経験あり（デザイナー、プログラマを担当）<br />
+      </p>
+      <div class="social-icons">
+        <!-- Bandcamp -->
+        <div class="social-icon">
+          <a href="https://qemelly.bandcamp.com/" target="_blank">
+            <img
+              src="assets/images/SocialIcons/bandcamp-button-bc-circle-white-128.png"
+              alt="Bandcamp"
+            />
+          </a>
+        </div>
+        <!-- GitHub -->
+        <div class="social-icon">
+          <a href="https://github.com/Noth827" target="_blank">
+            <img
+              src="assets\images\Projects\github-mark-white.png"
+              alt="GitHub"
+            />
+          </a>
+        </div>
+        <!-- Note -->
+        <div class="social-icon">
+          <a href="https://note.com/qemelly/" target="_blank">
+            <img src="assets/images/SocialIcons/note.png" alt="Note" />
+          </a>
+        </div>
+        <!-- Add more social icons as needed -->
+        <!-- YouTube -->
+        <div class="social-icon">
+          <a
+            href="https://www.youtube.com/c/your_youtube_channel"
+            target="_blank"
+            >YouTube</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>制作物です。</p>
+
+      <div class="portfolio">
+        <!-- Portfolio Items-->
+        <div class="portfolio-item">
+          <a href="" target="_blank">
+            <img src="assets\images\Projects\web.png" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">このサイト</div>
+              <div class="portfolio-item-responsible">Programming</div>
+              <div class="portfolio-item-description">
+                HTML, CSS, JavaScriptで作成しました。
+              </div>
+              <a href="project1.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a
+            href="https://unityroom.com/games/here_is_one_button"
+            target="_blank"
+          >
+            <img src="assets\images\Projects\HereIsOneButton.png" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">Here is ONE Button!</div>
+              <div class="portfolio-item-responsible">Music, Programming</div>
+              <div class="portfolio-item-description">
+                ルールが説明されないパズルゲームです。unity1weekで制作しました。
+              </div>
+              <a href="project1.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://unityroom.com/games/circla" target="_blank">
+            <img src="assets/images/Projects/Circla.gif" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">Circla</div>
+              <div class="portfolio-item-responsible">Music, Programming</div>
+              <div class="portfolio-item-description">
+                2レーン+αなのに高難易度なリズムゲームです。
+              </div>
+              <a href="project1.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a
+            href="https://qemelly.bandcamp.com/album/circla-project-ver10"
+            target="_blank"
+          >
+            <img src="assets/images/Projects/Album.png" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">Circla Album</div>
+              <div class="portfolio-item-responsible">Music, Design</div>
+              <div class="portfolio-item-description">
+                Circlaのサウンドトラックです。無償利用が可能です（イラストは友人作）。
+              </div>
+              <a href="project1.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://unityroom.com/games/decoder" target="_blank">
+            <img src="assets\images\Projects\decoder.png" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">Decoder</div>
+              <div class="portfolio-item-responsible">Music, Programming</div>
+              <div class="portfolio-item-description">
+                文字列を解読していくゲームです。unity1weekで制作しました。
+              </div>
+              <a href="project1.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a
+            href="https://www.youtube.com/playlist?list=PL-cydTzyfRl83vy7VTp5JmSoUCKKzcnua"
+            target="_blank"
+          >
+            <img src="assets\images\Projects\nobs-expor1x1t.gif" />
+            <div class="portfolio-item-content">
+              <div class="portfolio-item-title">楽曲</div>
+              <div class="portfolio-item-description">
+                その他楽曲（VOCALOID, Instrumental）
+              </div>
+              <a href="project2.html" class="portfolio-item-link">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <!-- Add more portfolio items as needed -->
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Unity(C#)</li>
+        <li>TOEIC 895点</li>
+        <li>AtCoder緑(Highest:908)</li>
+        <li>基本情報技術者試験</li>
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>DAW</li>
+        <li>Aseprite</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>email(Music): qenelly(At)gmail.com</p>
+      <p>email(Programming/Other): qemelgame(At)gmail.com</p>
+    </section>
+  </body>
+</html>
